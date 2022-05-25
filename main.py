@@ -1,10 +1,14 @@
 # Produce a programme that displays the prime numbers between 1 and 100
 # Prime number only has two factors, 1 and itself
 
+from time import perf_counter
+
 # Variables created that takes input
 # Converted string to integer
 lower = int(input("Enter the minimum number: "))
 upper = int(input("Enter the maximum number: "))
+
+t_start = perf_counter()
 
 # Outer for loop to iterate from lower to upper values
 # If condition to check if number is greater than 1
@@ -21,4 +25,6 @@ for num in range(lower, upper + 1):
         else:
             print(num)
 
+t_end = perf_counter()
+print("Elapsed time during the whole program in seconds: ", t_end - t_start)
 
