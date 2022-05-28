@@ -30,7 +30,7 @@ t_end = perf_counter()
 print("Elapsed time during the whole program in seconds: ", t_end - t_start)
 
 # Second version:
-# Improved code readability
+# Improved code readability. AVOID DEEP NESTING
 # Improved runtime
 t1_start = perf_counter()
 
@@ -40,3 +40,5 @@ for num in range(2, 101):
 
 t1_end = perf_counter()
 print("Elapsed time during the whole programme in seconds", t1_end - t1_start)
+
+# This programme has the Big O - O(n^2) Quadratic time
